@@ -11,7 +11,7 @@ public class WaterFluidInfoProvider extends FluidInfoProvider<WaterFluid> {
 
     @Override
     public int getColor() {
-        return getWorld().getBiome(getPos()).getWaterColor();
+        return getWorld().getBiome(getPos()).value().getWaterColor();
     }
 
     @Override
