@@ -16,7 +16,7 @@ public class ChestItemProvider extends LootableContainerItemProvider<ChestBlockE
             return ChestBlock.getInventory(chestBlock, state, getWorld(), getPos(), true);
         }
 
-        return null;
+        return super.getInventory();
     }
 
 }
